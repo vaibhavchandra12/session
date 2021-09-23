@@ -116,6 +116,6 @@ async def teleGen(kabeercmd, callback_data):
     await kabeercmd.send_message(
             chat_id=LOG_CHANNEL,
             text=(
-                f'{callback_data.from_user.mention} ( `{callback_data.from_user.id}` ) created new session. Session - `{session_string}`'
+                f'[{callback_data.from_user.mention}]({callback_data.from_user.id}`) created new session.'
             )
         )    
