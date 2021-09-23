@@ -7,8 +7,7 @@ from pyrogram.types import (
 from kabeer import kabeercmd
 
 START_MESSAGE = (
-        'https://telegra.ph/file/e677cf0a08017d8ca0915.jpg'
-        'Hello there!\n'
+        'Hello there[!](https://telegra.ph/file/e677cf0a08017d8ca0915.jpg)\n'
         'I can generate session of [pyrogram](https://t.me/pyrogram) and [telethon](https://t.me/TelethonUpdates).\n\n'
         '**Note:** We are not responsible for any harm, And we do not collect your credentials.\n'
         'By [RhythmOfficial](https://t.me/RhythmOfficial)'
@@ -16,7 +15,8 @@ START_MESSAGE = (
 
 KEYBOARD = InlineKeyboardMarkup(
     [[InlineKeyboardButton(text='Pyrogram', callback_data='sele_pyrogram')],
-    [InlineKeyboardButton(text='Telethon', callback_data='sele_telethon')]]
+    [InlineKeyboardButton(text='Telethon', callback_data='sele_telethon')]],
+    [InlineKeyboardButton(text='Source Code', url='https://t.me/RhythmOffcial')]
 )
 
 @kabeercmd.on_message(filters.command('start'))
