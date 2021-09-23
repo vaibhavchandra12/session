@@ -1,5 +1,7 @@
 {
   "name": "Kabeer Session Bot",
+  "logo":"https://telegra.ph/file/e677cf0a08017d8ca0915.jpg",
+  "description": "Session Gen Bot.",
   "env": {
     "BOT_TOKEN": {
       "description": "Bot Token, Get It From @BotFather.",
@@ -12,11 +14,11 @@
     "API_HASH": {
       "description": "Api Hash get it from my.telegram.org.",
       "value": ""
-    }
+    },
     "LOG_CHANNEL": {
       "description": "Log channel id",
       "value": ""
-  },
+  }
   "buildpacks": [{
     "url": "https://github.com/heroku/heroku-buildpack-python.git"
   }]
