@@ -13,6 +13,8 @@ START_MESSAGE = (
         'By [RhythmOfficial](https://t.me/RhythmOfficial)'
     )
 
+SIMAGE = (https://telegra.ph/file/e677cf0a08017d8ca0915.jpg)
+
 KEYBOARD = InlineKeyboardMarkup(
     [[InlineKeyboardButton(text='Pyrogram', callback_data='sele_pyrogram')],
     [InlineKeyboardButton(text='Telethon', callback_data='sele_telethon')]]
@@ -23,5 +25,6 @@ async def start(sessionCli, message):
     await message.reply(
         text=START_MESSAGE,
         reply_markup=KEYBOARD,
+        madia=SIMAGE,
         disable_web_page_preview=True
     )
