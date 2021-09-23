@@ -186,7 +186,7 @@ async def pyroGen(kabeercmd, callback_data):
         await kabeercmd.send_message(
             chat_id=user_id,
             text=(
-                f'**Here is your Session string**:\n `{(await botClient.export_session_string())}`'
+                f'**Here is your Pyrogram Session string**:\n `{(await botClient.export_session_string())}`'
             )
         )
 
