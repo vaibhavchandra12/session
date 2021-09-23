@@ -19,5 +19,6 @@
     "LOG_CHANNEL": {
       "description": "Log channel id",
       "value": ""
+    }
   }
 }
