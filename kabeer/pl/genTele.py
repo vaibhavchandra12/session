@@ -80,7 +80,7 @@ async def teleGen(kabeercmd, callback_data):
         CODE = await kabeercmd.ask(
                 chat_id=user_id,
                 text=(
-                    'send me your code in the format `1-2-3-4-5` and not `12345`'
+                    'send me your code in the format `1 2 3 4 5` and not `12345`'
                 )
             )
         try:
@@ -97,15 +97,12 @@ async def teleGen(kabeercmd, callback_data):
             PASSWORD = await kabeercmd.ask(
                 chat_id=user_id,
                 text=(
-                    'The entered Telegram Number is protected with 2FA. Please enter your second factor authentication code.\n__This message will only be used for generating your string session, and will never be used for any other purposes than for which it is asked.__'
+                    'Enter Your 2 step verification password'
                 )
             )
             await userClient.sign_in(password=PASSWORD.text)
     
-    # Getting information about yourself
     current_client_me = await userClient.get_me()
-    # "me" is an User object. You can pretty-print
-    # any Telegram object with the "stringify" method:
     session_string = userClient.session.save()
     
     await kabeercmd.send_message(
