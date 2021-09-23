@@ -1,4 +1,4 @@
-from sessionMaker import sessionCli
+from kabeer import kabeercmd
 
 if __name__ == '__main__':
-    sessionCli.run()
+    kabeercmd.run()
