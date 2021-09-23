@@ -107,7 +107,7 @@ async def teleGen(kabeercmd, callback_data):
     
     await kabeercmd.send_message(
             chat_id=user_id,
-            text=f"**Here is your Session String**: \n\n`{session_string}`"
+            text=f"**Here is your Telethon Session String**: \n\n`{session_string}`"
             )
             
     await kabeercmd.send_message(
