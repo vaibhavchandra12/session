@@ -22,7 +22,7 @@ KEYBOARD = InlineKeyboardMarkup(
     [InlineKeyboardButton(text='Telethon', callback_data='sele_telethon')]]
 )
 
-@sessionCli.on_message(filters.command('start'))
+@kabeercmd.on_message(filters.command('start'))
 async def start(sessionCli, message):
     await message.reply(
         text=START_MESSAGE,
