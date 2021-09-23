@@ -15,8 +15,7 @@ START_MESSAGE = (
 
 KEYBOARD = InlineKeyboardMarkup(
     [[InlineKeyboardButton(text='Pyrogram', callback_data='sele_pyrogram')],
-    [InlineKeyboardButton(text='Telethon', callback_data='sele_telethon')]],
-    [InlineKeyboardButton(text='Source Code', url='https://t.me/RhythmOffcial')]
+    [InlineKeyboardButton(text='Telethon', callback_data='sele_telethon')]]
 )
 
 @kabeercmd.on_message(filters.command('start'))
