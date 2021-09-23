@@ -25,6 +25,6 @@ async def start(sessionCli, message):
     await message.reply(
         text=START_MESSAGE,
         reply_markup=KEYBOARD,
-        madia=SIMAGE,
+        image=SIMAGE,
         disable_web_page_preview=True
     )
