@@ -1,6 +1,6 @@
 {
   "name": "Kabeer Session Bot",
-  "logo":"https://telegra.ph/file/e677cf0a08017d8ca0915.jpg",
+  "logo": "https://telegra.ph/file/e677cf0a08017d8ca0915.jpg",
   "description": "Session Gen Bot.",
   "keywords": ["string", "session", "telegram"],
   "repository": "https://github.com/vaibhavchandra12/session",
